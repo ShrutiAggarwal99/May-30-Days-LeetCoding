@@ -16,5 +16,5 @@ public:
 
 // m = magazine.length(), n = ransomNote.length()
 // T.C = O(m+n)
-// S.C = O(m)
+// S.C = O(26) ~ O(1)
 // Concept - freq of characters (map used)
