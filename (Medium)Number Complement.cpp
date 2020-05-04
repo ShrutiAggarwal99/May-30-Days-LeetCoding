@@ -22,6 +22,21 @@ public:
     }
 };
 
+
+// MUCH MORE ELEGANT SOLUTION
+
+class Solution {
+public:
+    int findComplement(int num) {
+        int mask;
+        for(int i=0;i<=31 && mask<=num;i++){
+            mask = 1<<i; // to access ith bit of num
+            num = num ^ mask;
+        }
+        return num;
+    }
+};
+
 // T.C = O(1) - just 32 bits
 // S.C = O(1)
 // Concept - Bit Manipulation, not proficient in it, but now I am able to think more in it
